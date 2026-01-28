@@ -10,7 +10,7 @@ function App() {
   const [editingTitle, setEditingTitle] = useState(""); // nouveau titre temporaire
 
   const fetchTasks = () => {
-    axios.get("http://localhost:5000/tasks")
+    axios.get("https://todo-list-react-backend-ovtc.onrender.com/tasks")
       .then(res => setTasks(res.data))
       .catch(err => console.error(err));
   };
